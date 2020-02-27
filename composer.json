@@ -1,0 +1,37 @@
+{
+    "autoload": {
+        "psr-4": {
+            "hrustbb2\\arrayproc\\": "arrayproc/",
+            "hrustbb2\\tests\\": "tests/"
+        }
+    },
+    "name": "hrustbb2/arrayproc",
+    "license": "MIT",
+    "description": "A PHP arrayprocessor",
+    "keywords": [
+        "arrayprocessor", "orm"
+    ],
+    "authors": [
+        {
+            "name": "hrustbb2",
+            "email": "hrustbb2@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "scripts": {
+        "php-cs-fixer": [
+            "vendor/bin/php-cs-fixer fix ./arrayproc --rules=@PSR2",
+            "vendor/bin/php-cs-fixer fix ./tests --rules=@PSR2"
+        ],
+        "test": [
+            "vendor/bin/phpunit tests/Test.php"
+        ]
+    },
+    "require": {
+        "php" : ">=5.5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "friendsofphp/php-cs-fixer": "^2.14"
+    }
+}
