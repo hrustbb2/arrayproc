@@ -170,7 +170,7 @@ class ArrayProcessor {
                 }
                 //
                 if($path->path){
-                    $c->{$id} = $path->data->{$id};
+                    $c->{$id} = clone $path->data->{$id};
                 }
             }
         }
